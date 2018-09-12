@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Myport</title>
+    <link rel="stylesheet" href="stylee.css">
+  </head>
+  <body>
+      <!-- <video id="glass" width="320" height="240" poster="http://www.energyrecovery.com/wp-content/uploads/2014/12/Water-1600x900.png" autoplay="true" loop="true">
+  	      <source src="skiy.mp4" type="video/mp4">
+  	      <source src="skiy.webm" type="video/webm">
+      </video> -->
+      <script>
+        jQuery('body').css('display', 'none');
+        jQuery(document).ready(function() {
+          jQuery('body').fadeIn();
+          jQuery('.linksfade a').on('click', function(event) {
+            var thetarget = this.getAttribute('target')
+            if (thetarget != "_blank") {
+              var thehref = this.getAttribute('href')
+              event.preventDefault();
+              jQuery('body').fadeOut(function() {
+                //alert(thehref)
+                window.location = thehref
+              });
+            }
+          });
+        });
+        setTimeout(function() {
+          jQuery('body').fadeIn();
+        }, 1000)
+      </script>
+      <div class="container" style="padding:20% 0 0 0;">
+      </div>
+      <h1><strong>my name is jenny yao.</strong></h1>
+      <div class="button">
+        <a href="explore.html" class="butn butn-1"> Explore my world </a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+*{
+  margin:0 auto;
+  padding: 0;
+  font-family: monospace;
+}
+
+#main{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://cdn.wallpapersafari.com/17/74/ydqrGS.jpg");
+  background-size: cover;
+}
+.oneimg{
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.oneimg:hover{
+  opacity: .7;
+  transition: all .5s ease-in;
+  position: fixed;
+}
+nav{
+  z-index: 10;
+  width:100%;
+  height: 80px;
+  background-color: lightblue;
+  line-height: 80px;
+  position: fixed;
+  animation: navbarfram 2s ease-in .2s 1 normal forwards;
+  opacity: 0%;
+}
+@keyframes navbarfram {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+nav ul li a:hover{
+  color:pink;
+  transition: all .5s ease-in;
+}
+box{
+  display: inline-block;
+  background: lightblue;
+  width: 25%;
+  height:50%;
+  position: relative;
+  left: 7%;
+  top: 25%;
+  animation: boxfram 2s ease-in-out .5s 1 normal forwards;
+}
+box2{
+  display: inline-block;
+  background: lightblue;
+  width: 25%;
+  height:50%;
+  position: relative;
+  left: 12%;
+  top: 25%;
+  animation: box2fram 2s ease-in-out .5s 1 normal forwards;
+}
+box3{
+  display: inline-block;
+  background: lightblue;
+  width: 25%;
+  height:50%;
+  position: relative;
+  left: 17%;
+  top: 25%;
+  animation: box3fram 2s ease-in-out .5s 1 normal forwards;
+}
+@keyframes boxfram {
+  0%{
+    opacity: 0;
+  }
+  30%{
+    height: 50%;
+    opacity:.6;
+  }
+  to{
+    height: 70%;
+    background: pink;
+    opacity: .6;
+  }
+}
+@keyframes box2fram {
+  0%{
+    opacity: 0;
+  }
+  30%{
+    height: 50%;
+    opacity:.6;
+  }
+  to{
+    height: 70%;
+    background: pink;
+    opacity: .6;
+  }
+}
+@keyframes box3fram {
+  0%{
+    opacity: 0;
+  }
+  30%{
+    height: 50%;
+    opacity:.6;
+  }
+  to{
+    height: 70%;
+    background: pink;
+    opacity: .6;
+  }
+}
+#sec{
+  background-color: #FEDB2D;
+  padding-bottom: 50%;
+  color: white;
+}
+#image{
+  background-color: #FEDB2D;
+}
+.twoimg:hover{
+  width: 45%;
+  height:45%;
+  transition: all 0.5s ease-in-out;
+}

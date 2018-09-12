@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> World.me </title>
+  <link rel="stylesheet" href="style_explore.css">
+</head>
+
+<body>
+  <script>
+    jQuery('body').css('display', 'none');
+    jQuery(document).ready(function() {
+      jQuery('body').fadeIn();
+      jQuery('.linksfade a').on('click', function(event) {
+        var thetarget = this.getAttribute('target')
+        if (thetarget != "_blank") {
+          var thehref = this.getAttribute('href')
+          event.preventDefault();
+          jQuery('body').fadeOut(function() {
+            //alert(thehref)
+            window.location = thehref
+          });
+        }
+      });
+    });
+    setTimeout(function() {
+      jQuery('body').fadeIn();
+    }, 1000)
+  </script>
+      <div id="main">
+        <nav>
+        <a href="myport.html"><img class="oneimg" src="logo.png" width="65" height="65"></a>
+          <ul class="nav-bar">
+              <li><a href="#"> my work </a></li>
+              <li><a href="#"> photography </a></li>
+              <li><a href="#"> about </a></li>
+              <li><a href="#"> contact me </a></li>
+          </ul>
+        </nav>
+        <box></box>
+        <box2></box2>
+        <box3></box3>
+      </div>
+      <div id="sec">
+        <h1> Here are some of my works...</h1><br />
+        <div id="image">
+        <a href="#"> <img id="img1" class="twoimg" src="fairy2.jpg" width="40%" height="40%"> </a>
+        <a href="#"> <img id="img2" class="twoimg" src="fairy1.jpg" width="40%" height="40%"> </a>
+        </div>
+      </div>
+
+</body>
+
+</html>

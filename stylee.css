@@ -1,0 +1,69 @@
+*{
+  background-color: black;
+}
+body html{
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+
+video{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+#glass{
+  margin-top:-100px;
+  margin-bottom: -100px;
+}
+
+
+h1{
+  z-index: 2;
+  position: relative;
+  bottom:1%;
+  color:white;
+  font-family: "Courier New", Courier, monospace;
+  animation: type 3s steps(21), blink-caret .75s step-end infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid lightblue;
+  width:21ch;
+  padding-left: 30%;
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 21ch;
+  }
+}
+@keyframes blink-caret {
+  from, to{ border-color: transparent}
+  50% {border-color: lightblue}
+}
+
+.button{
+  z-index:3;
+  margin-left: 30%;
+  margin-top: 7%;
+}
+.butn{
+  color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.butn:hover{
+  background-color: lightblue;
+  color:pink;
+  transition: all 0.8s ease-in;
+}
